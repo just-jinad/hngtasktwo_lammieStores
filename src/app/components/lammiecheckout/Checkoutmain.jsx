@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Footer from "../lammiehome/Footer";
+import Link from "next/link";
 
 const Checkoutmain = () => {
   return (
@@ -81,9 +82,11 @@ const Checkoutmain = () => {
                 <p>$150</p>
               </div>
               <p className="underline w-full border-t border-black mt-3"></p>
+              <Link href={'/payment'}>
               <div className="text-center mt-4 bg-blue-800 text-white font-bold p-4">
                 Continue
               </div>
+              </Link>
             </aside>
 
 
@@ -155,9 +158,11 @@ const Checkoutmain = () => {
                 <p>$150</p>
               </div>
               <p className="underline w-full border-t border-black mt-3"></p>
+              <Link href={'/payment'}>
               <div className="text-center mt-4 bg-blue-800 text-white font-bold p-4">
                 Continue
               </div>
+              </Link>
             </aside>
             
           </div>

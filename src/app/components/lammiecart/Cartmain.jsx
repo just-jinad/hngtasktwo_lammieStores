@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Footer from "../lammiehome/Footer";
 import Card from "../lammiehome/Card";
+import Link from "next/link";
 
 const Cartmain = () => {
   const products = [
@@ -74,12 +75,14 @@ const Cartmain = () => {
             <p className="font-bold text-xl">$100.00</p>
             <span>🔴 🔵 ⚫</span>
             <span className="text-sm">red blue black</span>
+            <Link href={'checkout'}>
             <button
               style={{ backgroundColor: "#2d16bb" }}
               className="p-4 w-full md:w-72 rounded-xl mt-6 text-white font-bold"
             >
               Add to cart
             </button>
+            </Link>
             <div className="mt-6">
               <Image
                 src={"/whiteball.png"}
