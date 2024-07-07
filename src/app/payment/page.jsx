@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Cartnav from "../components/lammiecart/Cartnav";
+import Footer from "../components/lammiehome/Footer";
 
 const page = () => {
   return (
@@ -197,6 +198,7 @@ const page = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };
