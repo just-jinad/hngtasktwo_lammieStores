@@ -4,33 +4,34 @@ import Footer from "../lammiehome/Footer";
 import Card from "../lammiehome/Card";
 
 const Cartmain = () => {
-    const products = [
-        {
-          id: 1,
-          name: "Maxi Adoline dress",
-          price: 300,
-          image: "/lammieblue.png",
-        },
-        {
-          id: 2,
-          name: "Ruched midi dress",
-          price: 320,
-          image: "/lammieblue.png",
-        },
-        {
-          id: 3,
-          name: "Long zipper adolf midi dress",
-          price: 200,
-          image: "/bluegown.png",
-        },
-        {
-          id: 3,
-          name: "Long zipper adolf midi dress",
-          price: 200,
-          image: "/bluegown.png",
-        },
-        // Add more products as needed
-      ];
+  const products = [
+    {
+      id: 1,
+      name: "Maxi Adoline dress",
+      price: 300,
+      image: "/lammieblue.png",
+    },
+    {
+      id: 2,
+      name: "Ruched midi dress",
+      price: 320,
+      image: "/lammieblue.png",
+    },
+    {
+      id: 3,
+      name: "Long zipper adolf midi dress",
+      price: 200,
+      image: "/bluegown.png",
+    },
+    {
+      id: 4,
+      name: "Long zipper adolf midi dress",
+      price: 200,
+      image: "/bluegown.png",
+    },
+    // Add more products as needed
+  ];
+
   return (
     <>
       <section className="min-h-screen" style={{ backgroundColor: "#cccccc" }}>
@@ -89,42 +90,43 @@ const Cartmain = () => {
             </div>
           </div>
         </div>
-
-        <div className="border rounded border-black mt-10 px-4 md:px-8 lg:px-24 py-6 mx-auto max-w-5xl">
-          <div className="flex flex-col md:flex-row justify-between items-center text-sm">
-            <div className="md:w-1/3 p-4">
-              <h4 className="font-bold">PRODUCT DETAIL</h4>
-              <ul>
-                <li>Back drawstrings</li>
-                <li>Midi Turtle neck</li>
-                <li>Body fitted</li>
-              </ul>
-            </div>
-            <div className="md:w-1/3 p-4">
-              <h4 className="font-bold">BRAND</h4>
-              <p>
-                Lammie Amaris produces quality made outfits inspired by vintage.
-              </p>
-            </div>
-            <div className="md:w-1/3 p-4">
-              <h4 className="font-bold">MATERIAL</h4>
-              <p>Cotton 100% Polythene 20%</p>
+        <div className="px-4">
+          <div className="border rounded border-black mt-10 px-4 md:px-8 lg:px-24 mx-auto max-w-5xl">
+            <div className="flex flex-col md:flex-row justify-between items-center text-sm">
+              <div className="w-full sm:w-1/3 p-4">
+                <h4 className="font-bold">PRODUCT DETAIL</h4>
+                <ul>
+                  <li>Back drawstrings</li>
+                  <li>Midi Turtle neck</li>
+                  <li>Body fitted</li>
+                </ul>
+              </div>
+              <div className="w-full sm:w-1/3 p-4">
+                <h4 className="font-bold">BRAND</h4>
+                <p>
+                  Lammie Amaris produces quality made outfits inspired by
+                  vintage.
+                </p>
+              </div>
+              <div className="w-full sm:w-1/3 p-4">
+                <h4 className="font-bold">MATERIAL</h4>
+                <p>Cotton 100% Polythene 20%</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div>
-        </div>
-        <div className=" mx-auto max-w-5xl">
+
+          <div className="mx-auto max-w-5xl">
             <p>⬅️back to catalog</p>
+          </div>
         </div>
 
-        <div>
-            <h4 className="text-center">You Might Also Like </h4>
-            <div className="grid grid-cols-4 gap-4 p-3 sm:ml-5">
-          {products.map((product) => (
-            <Card key={product.id} product={product} />
-          ))}
-        </div>
+        <div className="mt-10">
+          <h4 className="text-center">You Might Also Like</h4>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-3">
+            {products.map((product) => (
+              <Card key={product.id} product={product} />
+            ))}
+          </div>
         </div>
       </section>
       <Footer />
