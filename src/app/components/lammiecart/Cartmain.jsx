@@ -33,6 +33,29 @@ const Cartmain = () => {
    
   ];
 
+  const sizes = [
+    {
+      id:1,
+      image:'/xtras.png'
+    },
+    {
+      id:2,
+      image:'/small.png'
+    },
+    {
+      id:3,
+      image:'/med.png'
+    },
+    {
+      id:4,
+      image:'/large.png'
+    },
+    {
+      id:5,
+      image:'/xtralarge.png'
+    },
+  ]
+
   return (
     <>
       <section className="min-h-screen" style={{ backgroundColor: "#cccccc" }}>
@@ -90,6 +113,23 @@ const Cartmain = () => {
           className="ml-2"
         />
       </Link>
+
+      <div className="grid grid-cols-5 sm:grid-cols-5 md:grid-cols-5 mt-14 gap-4">
+    {
+      sizes.map((data)=>(
+        <div className="flex items-center justify-center" key={data.id}>
+          <Image 
+          src={data.image}
+          height={30}
+          width={30}
+          alt="sizes"
+          />
+        </div>
+      ))
+    }
+    </div>
+
+
     </div>
         </div>
         <div className="px-4">
@@ -118,7 +158,7 @@ const Cartmain = () => {
           </div>
 
           <div className="mx-auto max-w-5xl">
-            <p>⬅️back to catalog</p>
+            <p className="font-bold">⬅️back to catalog</p>
           </div>
         </div>
 
