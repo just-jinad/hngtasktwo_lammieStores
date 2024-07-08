@@ -11,7 +11,7 @@ const page = () => {
       <section className="min-h-screen py-10" style={{backgroundColor:'#d9d9d9'}}>
         <div className="container p-3 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Shopping Cart Section */}
-          <div className="lg:col-span-2 bg-white p-6 shadow-md rounded-lg">
+          <div className="lg:col-span-2 bg-white p-6 shadow-md rounded-lg" style={{backgroundColor:'#d9d9d9'}}>
             <h2 className="text-xl font-bold mb-4">Shopping Cart</h2>
             <div className="overflow-x-auto">
               <table className="min-w-full">
@@ -128,10 +128,12 @@ const page = () => {
               </table>
             </div>
             <div className="mt-6 flex justify-between">
-              <button className="text-blue-500">&lt; Continue Shopping</button>
-              <div className="text-right">
-                <p>Sub Total: $400</p>
-                <p>Shipping Fee: Free</p>
+              <button className="text-black font-bold">&lt; Continue Shopping</button>
+              <div className="text-right ">
+                <p>Sub Total: <strong> $400</strong></p>
+                <p>Shipping Fee: <span className="font-bold">Free</span ></p>
+                <p className="underline w-full border-t border-black mt-3"></p>
+
                 <p className="font-bold">Total: $400.00</p>
               </div>
             </div>
@@ -144,11 +146,22 @@ const page = () => {
               <label className="block mb-2 font-bold">Payment Method</label>
               <div className="flex space-x-4">
                 <label className="flex items-center">
-                  <input type="radio" name="payment" className="mr-2" /> Credit
+                  <input type="radio" name="payment" className="mr-2 " /> <Image 
+                  src={'/creditCard.png'}
+                  height={20}
+                  width={20}
+                  className="font-bold"
+                  alt="credit card"
+                  />  Credit
                   Card
                 </label>
                 <label className="flex items-center">
-                  <input type="radio" name="payment" className="mr-2" /> Paypal
+                  <input type="radio" name="payment" className="mr-2" /> <Image 
+                  src={'/paypal.png'}
+                  height={20}
+                  width={20}
+                  alt="credit card"
+                  /> Paypal
                 </label>
               </div>
             </div>
@@ -156,7 +169,7 @@ const page = () => {
               <label className="block mb-2 font-bold">Name on Card</label>
               <input
                 type="text"
-                className="border rounded w-full p-2"
+                className="border rounded w-full font-bold p-2 bg-gray-300"
                 defaultValue="John Carter"
               />
             </div>
@@ -164,7 +177,7 @@ const page = () => {
               <label className="block mb-2 font-bold">Card Number</label>
               <input
                 type="text"
-                className="border rounded w-full p-2"
+                className="border rounded w-full p-2 font-bold  bg-gray-300"
                 defaultValue="**** **** **** 8136"
               />
             </div>

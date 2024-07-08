@@ -65,7 +65,7 @@ const Checkoutmain = () => {
 
 
       {/* ORDER SUMMARY - Visible on large screens */}
-      <aside className="hidden lg:block lg:col-span-1 max-h-80 bg-white p-6 shadow-md rounded-lg lg:row-span-2">
+      <aside style={{ backgroundColor: "#d9d9d9" }} className="hidden lg:block lg:col-span-1 max-h-80 bg-white p-6 shadow-md rounded-lg lg:row-span-2">
               <h2 className="font-bold mb-4">Order Summary</h2>
               <div className="flex justify-between">
                 <p>Item subtotal</p>
@@ -141,7 +141,7 @@ const Checkoutmain = () => {
             </section>
 
             {/* ORDER SUMMARY - Hidden on large screens */}
-            <aside className="lg:hidden bg-white p-6 shadow-md rounded-lg mb-8">
+            <aside style={{ backgroundColor: "#d9d9d9" }} className="lg:hidden bg-white p-6 shadow-md rounded-lg mb-8">
               <h2 className="font-bold mb-4">Order Summary</h2>
               <div className="flex justify-between">
                 <p>Item subtotal</p>
