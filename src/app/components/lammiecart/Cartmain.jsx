@@ -8,29 +8,29 @@ const Cartmain = () => {
   const products = [
     {
       id: 1,
-      name: "Maxi Adoline dress",
-      price: 300,
-      image: "/lammieblue.png",
+      name: "Silver A-shape Dress",
+      price: 400,
+      image: "/Frameeleven.png",
     },
     {
       id: 2,
-      name: "Ruched midi dress",
+      name: "Ruched Midi Dress",
       price: 320,
-      image: "/lammieblue.png",
+      image: "/Frame12.png",
     },
     {
       id: 3,
-      name: "Long zipper adolf midi dress",
-      price: 200,
-      image: "/bluegown.png",
+      name: "Maxi Bodycon Dress",
+      price: 250,
+      image: "/Frame13.png",
     },
     {
       id: 4,
-      name: "Long zipper adolf midi dress",
-      price: 200,
-      image: "/bluegown.png",
+      name: "Feranda Strapless Dress",
+      price: 150,
+      image: "/Frame14.png",
     },
-    // Add more products as needed
+   
   ];
 
   return (
@@ -43,7 +43,7 @@ const Cartmain = () => {
             </h2>
             <div className="flex justify-center mt-4">
               <Image
-                src="/lammieblue.png"
+                src="/Framenine.png"
                 width={300}
                 height={300}
                 alt="cart select"
@@ -51,21 +51,21 @@ const Cartmain = () => {
             </div>
             <div className="flex mt-1 items-center justify-center gap-3">
               <Image
-                src={"/lammieblue.png"}
-                width={30}
-                height={30}
+                src={"/Framenine.png"}
+                width={40}
+                height={40}
                 alt="white ball"
               />
               <Image
-                src={"/lammieblue.png"}
-                width={30}
-                height={30}
+                src={"/Framenine.png"}
+                width={40}
+                height={40}
                 alt="white ball"
               />
               <Image
-                src={"/lammieblue.png"}
-                width={30}
-                height={30}
+                src={"/Framenine.png"}
+                width={40}
+                height={40}
                 alt="white ball"
               />
             </div>

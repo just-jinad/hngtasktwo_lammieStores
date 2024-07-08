@@ -7,64 +7,59 @@ const Main = () => {
   const products = [
     {
       id: 1,
-      name: 'Maxi Adoline dress',
+      name: 'Long Zipper Adolf Midi Dress',
       price: 300,
-      image: '/bluegown.png',
+      image: '/Frameone.png',
     },
     {
       id: 2,
-      name: 'Ruched midi dress',
+      name: 'Maxi Adeline Dress',
       price: 320,
-      image: '/bluegown.png',
+      image: '/Frametwo.png',
     },
     {
       id: 3,
-      name: 'Long zipper adolf midi dress',
+      name: 'Ruched Midi Dress',
       price: 200,
-      image: '/bluegown.png',
+      image: '/Framethree.png',
     },
     {
       id: 4,
-      name: 'Long zipper adolf midi dress',
+      name: 'Crystal Midi Dress',
       price: 200,
-      image: '/bluegown.png',
+      image: '/Framefour.png',
     },
     {
       id: 5,
-      name: 'Long zipper adolf midi dress',
+      name: 'High Slit Dinner Gown',
       price: 200,
-      image: '/bluegown.png',
+      image: '/Framefive.png',
     },
     {
       id: 6,
-      name: 'Long zipper adolf midi dress',
+      name: 'Maxi Bodycon Dress',
       price: 200,
-      image: '/bluegown.png',
+      image: '/Framesix.png',
     },
     {
       id: 7,
-      name: 'Long zipper adolf midi dress',
+      name: 'Silver A-shape Dress',
       price: 200,
-      image: '/bluegown.png',
+      image: '/Frameseven.png',
     },
     {
       id: 8,
-      name: 'Long zipper adolf midi dress',
+      name: 'Waist cut Maxi Dress',
       price: 200,
-      image: '/bluegown.png',
+      image: '/Frameeight.png',
     },
     {
       id: 9,
-      name: 'Long zipper adolf midi dress',
+      name: 'Corporate Midi Dress',
       price: 200,
-      image: '/bluegown.png',
+      image: '/Framenine.png',
     },
-    {
-      id: 10,
-      name: 'Long zipper adolf midi dress',
-      price: 200,
-      image: '/bluegown.png',
-    },
+   
   ];
 
   return (
@@ -83,8 +78,8 @@ const Main = () => {
             <h1>ENG 🌐</h1>
           </div>
           <div className="hidden sm:flex mt-10 gap-3">
-            <button className="bg-blue-800 p-1 rounded text-white">Wishlist</button>
-            <button className="bg-blue-800 p-1 rounded text-white">Your Cart</button>
+            <button className="bg-blue-800 p-1 rounded text-white">Wishlist 💗</button>
+            <button className="bg-blue-800 p-1 rounded text-white">Your Cart 🛒</button>
           </div>
           <Image className="hidden sm:block" src="/lammieProfile.png" width={50} height={50} alt="Profile" />
         </div>
