@@ -71,27 +71,26 @@ const Cartmain = () => {
             </div>
           </div>
 
-          <div className="mt-6 md:mt-32 md:ml-10 lg:ml-20 md:w-1/2 lg:w-2/3 flex flex-col items-center">
-            <p className="font-bold text-xl">$100.00</p>
-            <span>🔴 🔵 ⚫</span>
-            <span className="text-sm">red blue black</span>
-            <Link href={'checkout'}>
-            <button
-              style={{ backgroundColor: "#2d16bb" }}
-              className="p-4 w-full md:w-72 rounded-xl mt-6 text-white font-bold"
-            >
-              Add to cart
-            </button>
-            </Link>
-            <div className="mt-6">
-              <Image
-                src={"/whiteball.png"}
-                width={30}
-                height={30}
-                alt="white ball"
-              />
-            </div>
-          </div>
+          <div className="mt-32 flex flex-col items-center">
+      <p className="font-bold text-xl">$100.00</p>
+      <span>🔴 🔵 ⚫</span>
+      <span className="text-sm">red blue black</span>
+      <Link href={'checkout'} className="flex items-center">
+        <button
+          style={{ backgroundColor: "#2d16bb" }}
+          className="p-4 w-80 sm:w-80 rounded-xl mt-6 text-white font-bold"
+        >
+          Add to cart
+        </button>
+        <Image
+          src={"/whiteball.png"}
+          width={20}
+          height={20}
+          alt="white ball"
+          className="ml-2"
+        />
+      </Link>
+    </div>
         </div>
         <div className="px-4">
           <div className="border rounded border-black mt-10 px-4 md:px-8 lg:px-24 mx-auto max-w-5xl">
@@ -124,7 +123,7 @@ const Cartmain = () => {
         </div>
 
         <div className="mt-10">
-          <h4 className="text-center">You Might Also Like</h4>
+          <h4 className="text-center font-bold">You Might Also Like</h4>
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 p-3">
             {products.map((product) => (
               <Card key={product.id} product={product} />

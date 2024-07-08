@@ -75,7 +75,7 @@ const Main = () => {
             required
           />
           <div className="hidden sm:block mt-10">
-            <h1>ENG 🌐</h1>
+            <h1 className='font-bold text-black'>ENG 🌐</h1>
           </div>
           <div className="hidden sm:flex mt-10 gap-3">
             <button className="bg-blue-800 p-1 rounded text-white">Wishlist 💗</button>
