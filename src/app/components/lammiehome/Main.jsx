@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Card from '../lammiehome/Card';
+import Sidebar from './Sidebar';
 
 const Main = () => {
   const products = [
@@ -59,14 +60,13 @@ const Main = () => {
       price: 200,
       image: '/Framenine.png',
     },
-   
   ];
 
   return (
-    <>
-      <main>
-        <div className="flex flex-wrap justify-between items-center p-3 sm:ml-64">
-          <button className="block sm:hidden"></button>
+    <div className="flex">
+      <Sidebar />
+      <main className="flex-1 p-3">
+        <div className="flex flex-wrap justify-between items-center">
           <input
             type="search"
             id="default-search"
@@ -84,7 +84,7 @@ const Main = () => {
           <Image className="hidden sm:block" src="/lammieProfile.png" width={50} height={50} alt="Profile" />
         </div>
 
-        <section className="p-3 sm:ml-72">
+        <section className="p-3">
           <div className="flex justify-between items-center sm:hidden">
             <button className="block sm:hidden">☰</button>
             <div className="flex-1 flex justify-center">
@@ -97,18 +97,17 @@ const Main = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-3 sm:ml-5">
-            {products.map((product) => (
-              <Link key={product.id} href="/cartpage" passHref>
-                <span className="block">
-                  <Card product={product} />
-                </span>
-              </Link>
-            ))}
-          </div>
+          <div className="grid grid-cols-2 p-5 lg:grid-cols-3 gap-2 ">
+  {products.map((product) => (
+    <Link key={product.id} href="/cartpage" passHref>
+        <Card product={product} />
+    </Link>
+  ))}
+</div>
+
         </section>
       </main>
-    </>
+    </div>
   );
 };
 
